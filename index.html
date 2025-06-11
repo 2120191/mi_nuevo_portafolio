@@ -1,60 +1,85 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>JORGE_PORTAFOLIO</title>
-    </head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JORGE_PORTAFOLIO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
 
-    <body>
-        <section>
-            <h1>JORGE LUIS ROMERO MEJIA</h1>
-            <p>Soy estudiante del Instituto de Educación Superior Tecnologico <strong>"Jose Maria Arguedas"</strong>- Puquio,
-            del programa de estudios <strong>"Arquitectura de Plataformas y Servicios de Tecnologia y la informacion" - V PERIODO</strong>.</p>
-        </section>
-        
-        <section>
-            <hr>
-            <h2>Hobies.</h2>
-            <ul>
-                <li>jugar videojuegos</li>
-                <img src="assets/playfifa.webp" alt="imagen jugando un videojuego" width="5%">
-                <li>pasear</li>
-                <img src="assets/IMAGEN_PASEOS.jpeg" alt="imagen jugando un videojuego" width="5%">
-                <li>cantar</li>
-                <img src="assets/IMAGEN_CANTANDO.jpeg" alt="imagen jugando un videojuego" width="5%">
-            </ul>
-        </section>
-        
-        <section>
-            <hr>
-            <h2>Pasatiempos.</h2>
-            <ul>
-                <li>jugar futbol</li>
-                <img src="assets/jugando_futbol.jpeg" alt="imagen jugando futbol" width="7%">
-                <li>leer</li>
-                <img src="assets/OIP (1).jpeg" alt="imagen leendo un libro" width="7%">
-                <li>trabajar</li>
-                <img src="assets/imagen_trabajando.jpeg" alt="imagen trabajando" width="7%">
-            </ul>
-        </section>
-        
-        <section>
-            <hr>
-            <h2>Actividades Favoritas</h2>
-            <ul>
-                <li>leer</li>
-                <img src="assets/descarga.jpeg" alt="imagen leer" width="7%">
-                <li>Ver series</li>
-                <img src="assets/OIP.jpeg" alt="imagen viendo series" width="7%">
-            </ul>
-        </section>
-        
-        <section>
-            <hr>
-            <a href="https://www.facebook.com/"><img src="./assets/facebook-brands.svg" alt="logo de facebook" width="3%"></a>
-            <a href="https://www.twitter.com"><img src="./assets/x-twitter-brands.svg" alt="logo de twitter" width="3%"></a>
-            <a href="https://wa.me/+51927870885"><img src="./assets/whatsapp-brands.svg" alt="logo de whatsapp" width="3%"></a>
-            <a href="https://instagram.com"><img src="./assets/instagram-brands.svg" alt="logo de instagram" width="3%"></a>
-            <a href="https://tiktok.com"><img src="./assets/tiktok-brands.svg" alt="logo de tiktok" width="3%"></a>
-        </section>
-    </body>
+  <!-- Card de perfil -->
+  <section class="max-w-md mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden p-6">
+    <figure class="mb-4">
+      <img src="assets/imagen_perfil.jpg" alt="Foto de perfil" class="w-32 h-32 mx-auto rounded-full object-cover" />
+    </figure>
+    <h1 class="text-2xl font-bold text-center capitalize mb-2">Jorge Luis Romero Mejía</h1>
+    <p class="text-center text-gray-600">
+      estudinate del INATITUTO SU´PERIOR "JOSE MARIA ARGUEDAS DE PUQUIO "
+    </p>
+  </section>
+
+  <!-- Hobbies -->
+  <section class="max-w-4xl mx-auto mt-10">
+    <h2 class="text-xl font-semibold mb-4 border-b pb-2">Hobbies</h2>
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <article class="bg-white p-4 rounded-lg shadow">
+        <figure><img src="assets/playfifa.webp" alt="jugando videojuegos" class="w-full h-32 object-cover rounded" /></figure>
+        <figcaption class="mt-2 text-center font-medium">Jugar videojuegos</figcaption>
+      </article>
+      <article class="bg-white p-4 rounded-lg shadow">
+        <figure><img src="assets/IMAGEN_PASEOS.jpeg" alt="pasear" class="w-full h-32 object-cover rounded" /></figure>
+        <figcaption class="mt-2 text-center font-medium">Pasear</figcaption>
+      </article>
+      <article class="bg-white p-4 rounded-lg shadow">
+        <figure><img src="assets/IMAGEN_CANTANDO.jpeg" alt="cantar" class="w-full h-32 object-cover rounded" /></figure>
+        <figcaption class="mt-2 text-center font-medium">Cantar</figcaption>
+      </article>
+    </section>
+  </section>
+
+  <!-- Pasatiempos -->
+  <section class="max-w-4xl mx-auto mt-10">
+    <h2 class="text-xl font-semibold mb-4 border-b pb-2">Pasatiempos</h2>
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <article class="bg-white p-4 rounded-lg shadow">
+        <figure><img src="assets/jugando_futbol.jpeg" alt="jugando futbol" class="w-full h-32 object-cover rounded" /></figure>
+        <figcaption class="mt-2 text-center font-medium">Jugar fútbol</figcaption>
+      </article>
+      <article class="bg-white p-4 rounded-lg shadow">
+        <figure><img src="assets/OIP (1).jpeg" alt="leyendo" class="w-full h-32 object-cover rounded" /></figure>
+        <figcaption class="mt-2 text-center font-medium">Leer</figcaption>
+      </article>
+      <article class="bg-white p-4 rounded-lg shadow">
+        <figure><img src="assets/imagen_trabajando.jpeg" alt="trabajando" class="w-full h-32 object-cover rounded" /></figure>
+        <figcaption class="mt-2 text-center font-medium">Trabajar</figcaption>
+      </article>
+    </section>
+  </section>
+
+  <!-- Actividades favoritas -->
+  <section class="max-w-2xl mx-auto mt-10">
+    <h2 class="text-xl font-semibold mb-4 border-b pb-2">Actividades Favoritas</h2>
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <article class="bg-white p-4 rounded-lg shadow">
+        <figure><img src="assets/descarga.jpeg" alt="leer" class="w-full h-32 object-cover rounded" /></figure>
+        <figcaption class="mt-2 text-center font-medium">Leer</figcaption>
+      </article>
+      <article class="bg-white p-4 rounded-lg shadow">
+        <figure><img src="assets/OIP.jpeg" alt="ver series" class="w-full h-32 object-cover rounded" /></figure>
+        <figcaption class="mt-2 text-center font-medium">Ver series</figcaption>
+      </article>
+    </section>
+  </section>
+
+  <!-- Redes Sociales -->
+  <section class="max-w-md mx-auto mt-10 flex justify-center space-x-6">
+    <a href="https://www.facebook.com/"><img src="./assets/facebook-brands.svg" alt="Facebook" class="w-6 h-6" /></a>
+    <a href="https://www.twitter.com"><img src="./assets/x-twitter-brands.svg" alt="Twitter" class="w-6 h-6" /></a>
+    <a href="https://wa.me/+51927870885"><img src="./assets/whatsapp-brands.svg" alt="WhatsApp" class="w-6 h-6" /></a>
+    <a href="https://instagram.com"><img src="./assets/instagram-brands.svg" alt="Instagram" class="w-6 h-6" /></a>
+    <a href="https://tiktok.com"><img src="./assets/tiktok-brands.svg" alt="TikTok" class="w-6 h-6" /></a>
+  </section>
+
+</body>
 </html>
