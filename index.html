@@ -1,85 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JORGE_PORTAFOLIO</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de JORGE LUIS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body id="inicio"> <!-- NUEVO: ID para el enlace de "Inicio" -->
 
-  <!-- Card de perfil -->
-  <section class="max-w-md mx-auto mt-10 bg-white shadow-lg rounded-lg overflow-hidden p-6">
-    <figure class="mb-4">
-      <img src="assets/imagen_perfil.jpg" alt="Foto de perfil" class="w-32 h-32 mx-auto rounded-full object-cover" />
-    </figure>
-    <h1 class="text-2xl font-bold text-center capitalize mb-2">Jorge Luis Romero Mejía</h1>
-    <p class="text-center text-gray-600">
-      estudinate del INATITUTO SU´PERIOR "JOSE MARIA ARGUEDAS DE PUQUIO "
-    </p>
-  </section>
+    <header>
+        <nav>
+            <a href="#inicio" class="logo">JORGE LUIS</a> <!-- El logo también lleva al inicio -->
+            <ul>
+                <!-- NUEVO: Enlace a Inicio -->
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#sobre-mi">SOBRE MI</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Hobbies -->
-  <section class="max-w-4xl mx-auto mt-10">
-    <h2 class="text-xl font-semibold mb-4 border-b pb-2">Hobbies</h2>
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <article class="bg-white p-4 rounded-lg shadow">
-        <figure><img src="assets/playfifa.webp" alt="jugando videojuegos" class="w-full h-32 object-cover rounded" /></figure>
-        <figcaption class="mt-2 text-center font-medium">Jugar videojuegos</figcaption>
-      </article>
-      <article class="bg-white p-4 rounded-lg shadow">
-        <figure><img src="assets/IMAGEN_PASEOS.jpeg" alt="pasear" class="w-full h-32 object-cover rounded" /></figure>
-        <figcaption class="mt-2 text-center font-medium">Pasear</figcaption>
-      </article>
-      <article class="bg-white p-4 rounded-lg shadow">
-        <figure><img src="assets/IMAGEN_CANTANDO.jpeg" alt="cantar" class="w-full h-32 object-cover rounded" /></figure>
-        <figcaption class="mt-2 text-center font-medium">Cantar</figcaption>
-      </article>
-    </section>
-  </section>
+    <main>
+        <!-- La sección hero ahora es el destino del enlace #inicio -->
+        <section class="hero">
+            <SECTION class="hero-content">
+                <h1>Hola, mi nombre es Jorge</h1>
+                <p>Estudiante desarrollador de paginas web</p>
+                <a href="https://docs.google.com/document/d/1H5oG-m3XvjXfhktG31BLwnivXmLtlq2B9yC3C7GzD3w/edit?usp=sharing" class="btn">DESCARGA CV</a>
+            </section>
+        </section>
 
-  <!-- Pasatiempos -->
-  <section class="max-w-4xl mx-auto mt-10">
-    <h2 class="text-xl font-semibold mb-4 border-b pb-2">Pasatiempos</h2>
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <article class="bg-white p-4 rounded-lg shadow">
-        <figure><img src="assets/jugando_futbol.jpeg" alt="jugando futbol" class="w-full h-32 object-cover rounded" /></figure>
-        <figcaption class="mt-2 text-center font-medium">Jugar fútbol</figcaption>
-      </article>
-      <article class="bg-white p-4 rounded-lg shadow">
-        <figure><img src="assets/OIP (1).jpeg" alt="leyendo" class="w-full h-32 object-cover rounded" /></figure>
-        <figcaption class="mt-2 text-center font-medium">Leer</figcaption>
-      </article>
-      <article class="bg-white p-4 rounded-lg shadow">
-        <figure><img src="assets/imagen_trabajando.jpeg" alt="trabajando" class="w-full h-32 object-cover rounded" /></figure>
-        <figcaption class="mt-2 text-center font-medium">Trabajar</figcaption>
-      </article>
-    </section>
-  </section>
+        <section id="sobre-mi" class="seccion">
+            <h2>SOBRE MI</h2>
+            <section class="sobre-mi-container">
+                <section class="sobre-mi-bio">
+                    <figure>
+                        <img src="./public/descarga.jpg" alt="mi foto" class="foto-perfil">
+                    </figure>
+                    <p>
+                        ¡Bienvenido a mi portafolio! Soy un entusiasta del desarrollo web que está comenzando su viaje en el mundo de la programación. 
+                        Actualmente estoy aprendiendo HTML y CSS para construir interfaces de usuario atractivas y funcionales. 
+                        Me encanta resolver problemas y estoy ansioso por aplicar mis habilidades en proyectos emocionantes.
+                    </p>
+                </section>
+                
+                <aside class="habilidades">
+                    <h3>Habilidades Técnicas</h3>
+                    <ul class="habilidades-lista"> <!-- La estructura HTML no cambia, solo el CSS -->
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                        <!-- Añade aquí más habilidades a medida que las aprendas -->
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-git-alt"></i> Git</li>
+                    </ul>
+                </aside>
+            </section>
+        </section>
 
-  <!-- Actividades favoritas -->
-  <section class="max-w-2xl mx-auto mt-10">
-    <h2 class="text-xl font-semibold mb-4 border-b pb-2">Actividades Favoritas</h2>
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <article class="bg-white p-4 rounded-lg shadow">
-        <figure><img src="assets/descarga.jpeg" alt="leer" class="w-full h-32 object-cover rounded" /></figure>
-        <figcaption class="mt-2 text-center font-medium">Leer</figcaption>
-      </article>
-      <article class="bg-white p-4 rounded-lg shadow">
-        <figure><img src="assets/OIP.jpeg" alt="ver series" class="w-full h-32 object-cover rounded" /></figure>
-        <figcaption class="mt-2 text-center font-medium">Ver series</figcaption>
-      </article>
-    </section>
-  </section>
+        <!-- Sección de Proyectos sin cambios -->
+        <section id="proyectos" class="seccion">
+            <h2>MIS PROYECTOS</h2>
+            <section class="proyectos-grid">
+                <article class="tarjeta-proyecto">
+                    <img src="img/proyecto1.jpg" alt="Imagen del Proyecto 1">
+                    <h3>Proyecto Uno</h3>
+                    <p>Una página de aterrizaje para un café local, creada con HTML5 y CSS3.</p>
+                    <a href="#" target="_blank">Ver Proyecto</a>
+                </article>
 
-  <!-- Redes Sociales -->
-  <section class="max-w-md mx-auto mt-10 flex justify-center space-x-6">
-    <a href="https://www.facebook.com/"><img src="./assets/facebook-brands.svg" alt="Facebook" class="w-6 h-6" /></a>
-    <a href="https://www.twitter.com"><img src="./assets/x-twitter-brands.svg" alt="Twitter" class="w-6 h-6" /></a>
-    <a href="https://wa.me/+51927870885"><img src="./assets/whatsapp-brands.svg" alt="WhatsApp" class="w-6 h-6" /></a>
-    <a href="https://instagram.com"><img src="./assets/instagram-brands.svg" alt="Instagram" class="w-6 h-6" /></a>
-    <a href="https://tiktok.com"><img src="./assets/tiktok-brands.svg" alt="TikTok" class="w-6 h-6" /></a>
-  </section>
+                <article class="tarjeta-proyecto">
+                    <img src="img/proyecto2.jpg" alt="Imagen del Proyecto 2">
+                    <h3>Proyecto Dos</h3>
+                    <p>Un clon de la página principal de Google, enfocado en la estructura semántica de HTML.</p>
+                    <a href="#" target="_blank">Ver Proyecto</a>
+                </article>
+
+                <article class="tarjeta-proyecto">
+                    <img src="img/proyecto3.jpg" alt="Imagen del Proyecto 3">
+                    <h3>Proyecto Tres</h3>
+                    <p>Una tarjeta de perfil personal con efectos de hover en CSS.</p>
+                    <a href="#" target="_blank">Ver Proyecto</a>
+                </article>
+            </section>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <h2>Contacto</h2>
+            <p>¡Hablemos! Puedes encontrarme en las siguientes plataformas:</p>
+            <ul class="redes-sociales"> <!-- La estructura HTML no cambia, solo el CSS -->
+                <li><a href="jorgeluisromeromejia4@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                <li><a href="https://www.linkedin.com/in/eber-rp-46717a36a/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://github.com/2120191" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creado por JORGE © 2025</p>
+    </footer>
 
 </body>
 </html>
