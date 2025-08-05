@@ -1,105 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de JORGE LUIS</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio de JORGE LUIS</title>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
-<body id="inicio"> <!-- NUEVO: ID para el enlace de "Inicio" -->
+<body id="inicio">
 
-    <header>
-        <nav>
-            <a href="#inicio" class="logo">JORGE LUIS</a> <!-- El logo también lleva al inicio -->
-            <ul>
-                <!-- NUEVO: Enlace a Inicio -->
-                <li><a href="#inicio">INICIO</a></li>
-                <li><a href="#sobre-mi">SOBRE MI</a></li>
-                <li><a href="#proyectos">PROYECTOS</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav>
+      <a href="#inicio" class="logo">JORGE LUIS</a>
+      <ul>
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#sobre-mi">SOBRE MI</a></li>
+        <li><a href="#proyectos">PROYECTOS</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <!-- La sección hero ahora es el destino del enlace #inicio -->
-        <section class="hero">
-            <SECTION class="hero-content">
-                <h1>Hola, mi nombre es Jorge</h1>
-                <p>Estudiante desarrollador de paginas web</p>
-                <a href="https://docs.google.com/document/d/1H5oG-m3XvjXfhktG31BLwnivXmLtlq2B9yC3C7GzD3w/edit?usp=sharing" class="btn">DESCARGA CV</a>
-            </section>
-        </section>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>¡Hola, soy Jorge!</h1>
+        <p>Estudiante y desarrollador de páginas web</p>
+        <a href="https://docs.google.com/document/d/1H5oG-m3XvjXfhktG31BLwnivXmLtlq2B9yC3C7GzD3w/edit?usp=sharing" class="btn">Descargar CV</a>
+      </div>
+    </section>
 
-        <section id="sobre-mi" class="seccion">
-            <h2>SOBRE MI</h2>
-            <section class="sobre-mi-container">
-                <section class="sobre-mi-bio">
-                    <figure>
-                        <img src="./public/descarga.jpg" alt="mi foto" class="foto-perfil">
-                    </figure>
-                    <p>
-                        ¡Bienvenido a mi portafolio! Soy un entusiasta del desarrollo web que está comenzando su viaje en el mundo de la programación. 
-                        Actualmente estoy aprendiendo HTML y CSS para construir interfaces de usuario atractivas y funcionales. 
-                        Me encanta resolver problemas y estoy ansioso por aplicar mis habilidades en proyectos emocionantes.
-                    </p>
-                </section>
-                
-                <aside class="habilidades">
-                    <h3>Habilidades Técnicas</h3>
-                    <ul class="habilidades-lista"> <!-- La estructura HTML no cambia, solo el CSS -->
-                        <li><i class="fab fa-html5"></i> HTML5</li>
-                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
-                        <!-- Añade aquí más habilidades a medida que las aprendas -->
-                        <li><i class="fab fa-js"></i> JavaScript</li>
-                        <li><i class="fab fa-git-alt"></i> Git</li>
-                    </ul>
-                </aside>
-            </section>
-        </section>
+    <section id="sobre-mi" class="seccion">
+      <h2>Sobre Mí</h2>
+      <div class="sobre-mi-container">
+        <div class="sobre-mi-bio">
+          <figure>
+            <img src="./public/descarga.jpg" alt="Foto de perfil" class="foto-perfil"/>
+          </figure>
+          <p>
+            ¡Bienvenido a mi portafolio! Soy un entusiasta del desarrollo web que está comenzando su viaje en el mundo de la programación.
+            Actualmente estoy aprendiendo HTML y CSS para construir interfaces atractivas y funcionales. 
+            Me encanta resolver problemas y estoy ansioso por aplicar mis habilidades en proyectos emocionantes.
+          </p>
+        </div>
 
-        <!-- Sección de Proyectos sin cambios -->
-        <section id="proyectos" class="seccion">
-            <h2>MIS PROYECTOS</h2>
-            <section class="proyectos-grid">
-                <article class="tarjeta-proyecto">
-                    <img src="img/proyecto1.jpg" alt="Imagen del Proyecto 1">
-                    <h3>Proyecto Uno</h3>
-                    <p>Una página de aterrizaje para un café local, creada con HTML5 y CSS3.</p>
-                    <a href="#" target="_blank">Ver Proyecto</a>
-                </article>
+        <aside class="habilidades">
+          <h3>Habilidades Técnicas</h3>
+          <ul class="habilidades-lista">
+            <li><i class="fab fa-html5"></i> HTML5</li>
+            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-git-alt"></i> Git</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
-                <article class="tarjeta-proyecto">
-                    <img src="img/proyecto2.jpg" alt="Imagen del Proyecto 2">
-                    <h3>Proyecto Dos</h3>
-                    <p>Un clon de la página principal de Google, enfocado en la estructura semántica de HTML.</p>
-                    <a href="#" target="_blank">Ver Proyecto</a>
-                </article>
+    <section id="proyectos" class="seccion">
+      <h2>Mis Proyectos</h2>
+      <div class="proyectos-grid">
+        <article class="tarjeta-proyecto">
+          <img src="./public/Captura de pantalla 2025-08-05 091018.png" alt="Proyecto 1"/>
+          <h3>CLON NETFLIX</h3>
+          <p>Página de inicio de netflix, creada con HTML5 y CSS3.</p>
+          <a href="#" class="btn-secundario" target="_blank">Ver Proyecto</a>
+        </article>
 
-                <article class="tarjeta-proyecto">
-                    <img src="img/proyecto3.jpg" alt="Imagen del Proyecto 3">
-                    <h3>Proyecto Tres</h3>
-                    <p>Una tarjeta de perfil personal con efectos de hover en CSS.</p>
-                    <a href="#" target="_blank">Ver Proyecto</a>
-                </article>
-            </section>
-        </section>
+        <article class="tarjeta-proyecto">
+          <img src="./public/FIGMA..png" alt="APP MOVIL PERSONAL"/>
+          <h3>DISEÑO PERSONAL</h3>
+          <p>Clon DE SESION EN FIGMA DE UNA APP LIBRO</p>
+          <a href="https://www.figma.com/design/0CSEYpxGxhw7qtCO9EHNtw/Untitled?node-id=0-1&m=dev&t=OP3pLbWCC6Emts9s-1" class="btn-secundario" target="_blank">Ver Proyecto</a>
+        </article>
 
-        <section id="contacto" class="seccion">
-            <h2>Contacto</h2>
-            <p>¡Hablemos! Puedes encontrarme en las siguientes plataformas:</p>
-            <ul class="redes-sociales"> <!-- La estructura HTML no cambia, solo el CSS -->
-                <li><a href="jorgeluisromeromejia4@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
-                <li><a href="https://www.linkedin.com/in/eber-rp-46717a36a/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="https://github.com/2120191" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-            </ul>
-        </section>
-    </main>
+        <article class="tarjeta-proyecto">
+          <img src="./public/FINALE.png" alt="Proyecto 3"/>
+          <h3>PROTYECTO FINAL</h3>
+          <p>TRABJO GRUPAL CREANDO UN PROYECTO WEB.</p>
+          <a href="https://docs.google.com/document/d/1VURK3hBOXrixrEn42-dRH3yIMreTv-Gg7Rx_NYbWhrs/edit?usp=sharing" class="btn-secundario" target="_blank">Ver Proyecto</a>
+        </article>
+      </div>
+    </section>
 
-    <footer>
-        <p>Creado por JORGE © 2025</p>
-    </footer>
+    <section id="contacto" class="seccion">
+      <h2>Contacto</h2>
+      <p>¡Hablemos! Puedes encontrarme en:</p>
+      <ul class="redes-sociales">
+        <li><a href="mailto:jorgeluisromeromejia4@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+        <li><a href="https://www.linkedin.com/in/eber-rp-46717a36a/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://github.com/2120191" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Creado por JORGE © 2025</p>
+  </footer>
 
 </body>
 </html>
