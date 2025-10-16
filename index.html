@@ -14,7 +14,7 @@
       <a href="#inicio" class="logo">JORGE LUIS</a>
       <ul>
         <li><a href="#inicio">INICIO</a></li>
-        <li><a href="#sobre-mi">SOBRE MI</a></li>
+        <li><a href="#sobre-mi">SOBRE MÍ</a></li>
         <li><a href="#proyectos">PROYECTOS</a></li>
         <li><a href="#contacto">CONTACTO</a></li>
       </ul>
@@ -22,6 +22,7 @@
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-content">
         <h1>¡Hola, soy Jorge!</h1>
@@ -30,6 +31,7 @@
       </div>
     </section>
 
+    <!-- SOBRE MÍ -->
     <section id="sobre-mi" class="seccion">
       <h2>Sobre Mí</h2>
       <div class="sobre-mi-container">
@@ -56,35 +58,49 @@
       </div>
     </section>
 
+    <!-- PROYECTOS -->
     <section id="proyectos" class="seccion">
       <h2>Mis Proyectos</h2>
       <div class="proyectos-grid">
         <article class="tarjeta-proyecto">
           <img src="./public/Captura de pantalla 2025-08-05 091018.png" alt="Proyecto 1"/>
           <h3>CLON NETFLIX</h3>
-          <p>Página de inicio de netflix, creada con HTML5 y CSS3.</p>
+          <p>Página de inicio de Netflix, creada con HTML5 y CSS3.</p>
           <a href="#" class="btn-secundario" target="_blank">Ver Proyecto</a>
         </article>
 
         <article class="tarjeta-proyecto">
-          <h3>CERTIDICADOS</h3>
-          <p>CERTIFICADO FREECODECAMP</p>
+          <img src="./public/certificado.png" alt="Proyecto 2"/>
+          <h3>CERTIFICADOS</h3>
+          <p>Certificado FreeCodeCamp en Responsive Web Design.</p>
           <a href="https://www.freecodecamp.org/certification/fcc-334acd27-4981-452d-86a2-f59cb120e376/responsive-web-design" class="btn-secundario" target="_blank">Ver Proyecto</a>
         </article>
 
         <article class="tarjeta-proyecto">
           <img src="./public/FINALE.png" alt="Proyecto 3"/>
-          <h3>PROTYECTO FINAL</h3>
-          <p>TRABJO GRUPAL CREANDO UN PROYECTO WEB.</p>
+          <h3>PROYECTO FINAL</h3>
+          <p>Trabajo grupal creando un proyecto web educativo.</p>
           <a href="https://docs.google.com/document/d/1VURK3hBOXrixrEn42-dRH3yIMreTv-Gg7Rx_NYbWhrs/edit?usp=sharing" class="btn-secundario" target="_blank">Ver Proyecto</a>
         </article>
-        
       </div>
     </section>
 
+    <!-- CONTACTO -->
     <section id="contacto" class="seccion">
-      <h2>Contacto</h2>
-      <p>¡Hablemos! Puedes encontrarme en:</p>
+      <h2>Contáctame</h2>
+      <form action="https://formspree.io/f/mjvnyjyo" method="POST" class="form-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
       <ul class="redes-sociales">
         <li><a href="mailto:jorgeluisromeromejia4@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
         <li><a href="https://www.linkedin.com/in/eber-rp-46717a36a/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
